@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-title class="subtitle">Calculadora en Angular</mat-card-title>
+    <mat-card-subtitle>
+      <mat-grid-list cols="6" rowHeight="100px">
+        <mat-grid-tile colspan="5" rowspan="1">
+          <mat-form-field appearance="outline" class="result">
+            <input matInput type="text" [value]="numberShow" disabled />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <mat-icon
+            matSuffix
+            (click)="notShow()"
+            class="clear"
+            matTooltip="Limpiar"
+            >backspace</mat-icon
+          >
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-subtitle>
+    <mat-card-actions>
+      <mat-grid-list cols="4" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let item of buttonsOperation">
+          <button
+            mat-button
+            class="buttonItem"
+            matTooltip="{{ item }}"
+            (click)="operation(item)"
+          >
+            {{ item }}
+          </button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="footer">
+  <footer>
+    Desarrollado Por Einer Bravo C. - Universidad Autónoma Del Caribe
+  </footer>
+</div>

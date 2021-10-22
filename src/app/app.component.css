@@ -1,0 +1,44 @@
+.container {
+  max-width: 50%;
+  height: 500px;
+  margin-left: 25%;
+  padding-top: 50px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 4px 16px 5px rgba(219, 219, 219, 1);
+  -moz-box-shadow: 5px 4px 16px 5px rgba(219, 219, 219, 1);
+  box-shadow: 5px 4px 16px 5px rgba(219, 219, 219, 1);
+}
+
+.subtitle {
+  padding: 10px 0;
+}
+
+.result {
+  width: 100%;
+}
+
+.buttonItem {
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+input {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.footer {
+  position: relative;
+  top: 8%;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(167, 161, 161);
+}
